@@ -1,3 +1,9 @@
+:root{
+	color: #808080;
+	background-image: url('./wood.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +41,122 @@
   to {
     transform: rotate(360deg);
   }
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.round-edge{
+	border-radius: 10px;
+}
+.round-edge-left{
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+}
+.round-edge-right{
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.margin10{
+	margin: 10px;
+}
+.center-text-align{
+	text-align: center;
+}
+.right-text-align{
+	text-align: center;
+}
+textarea {
+    border: none;
+    overflow: auto;
+    outline: none;
+		color: #808080;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    resize: none; /*remove the resize handle on the bottom right*/
+}
+.preview-container{
+	overflow: auto;
+}
+.white-bg{
+	background-color: white;
+}
+.big-font{
+	font-size: 50px;
+}
+.white-text{
+	color: white;
+}
+.yellow-color{
+	background-color: #ffdd55ff;
+}
+.padding-left10{
+	padding-left: 10px;	
+}
+.subheader{
+	width: 50%;
+}
+.main-app-container{
+	display: flex;
+	flex-direction: column;
+}
+
+.preview-container{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin: 10px;
+}
+
+.editor-container{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin: 10px;
+}
+.side-panes-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 90vh;
+}
+.ab{
+	border: solid 2px black;
+}
+.auto-margin{
+	margin: auto;
+}
+.margin10{
+	margin: 10px;
+}
+.invisible-boundary{
+	border: none;
+}
+.fill-area{
+	flex: 1;
+}
+.row{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.reverse-row{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+@media only screen and (max-width: 500px){
+	.side-panes-container{
+		flex-direction: column;
+	}
 }
