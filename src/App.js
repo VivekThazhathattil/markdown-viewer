@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import marked from 'marked';
@@ -52,20 +51,6 @@ const MainTitle = () =>{
 	return(
 		<h1 className="auto-margin big-font">Markdown Previewer</h1>
 	);	
-}
-function isHeader(input){
-	return (/^#{1,6}\ /.test(input));
-}
-function getMarkdown(inputs){
-	const arr = inputs.split('\n');
-	let comps = [];
-	comps = arr.map( (e) => {
-		if(isHeader(e))
-			return (<h1>{e.replace(/^#{1,6}\ /,"")}</h1>);
-		else
-			return e;
-	});
-	return comps;
 }
 class App extends React.Component{
 	constructor(props){
